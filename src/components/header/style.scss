@@ -1,0 +1,157 @@
+.header {
+	padding: 80px 0 200px 0;
+
+	.left-content {
+		text-align: left;
+	}
+
+	.logo, .social-links {
+		display: inline-block;
+	}
+
+	.logo {
+		margin: 0;
+	}
+
+	.social-links {
+		list-style-type: none;
+		margin: 0;
+		padding: 0 0 0 0;
+
+		&::before {
+			content: "";
+			border-left: 1px solid #e7e7e7;
+			margin: 0 20px 0 30px;
+		}
+
+		.social-item {
+			display: inline-block;
+			margin: 0 10px;
+
+			.svg-inline--fa {
+				height: 14px;
+				width: 14px;
+			}
+
+			& > a {
+				color: #9b9b9b;
+			}
+		}
+	}
+
+	.right-content {
+		text-align: right;
+	}
+
+	.toggle-button {
+		background: 0 0;
+		border: 1px solid #000;
+		border-radius: 3px;
+		display: none;
+		margin: 5px 0 0;
+		padding: 6px 10px;
+
+		& > span {
+			background-color: #000;
+			display: block;
+			height: 1px;
+			margin: 7px 0;
+			width: 25px;
+		}
+	}
+
+	.nav-menu {
+		z-index: 99;
+	
+		& > ul {
+			list-style-type: none;
+			margin: 10px 0 0;
+			padding: 0;
+			text-align: right;
+		}
+
+		.menu-item {
+			display: inline-block;
+			margin: 0 20px;
+
+			& > a {
+				color: #363636;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 11px;
+				font-weight: 600;
+				letter-spacing: 4px;
+				text-transform: uppercase;
+			}
+
+			& > a:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+
+/* Landscape tablets and medium desktops */
+@media (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+	.header {
+		.social-links {
+			display: none;
+		}
+
+		.nav-menu {
+			.menu-item {
+				margin: 0 15px;
+			}
+		}
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	.header {
+		padding: 30px 0 60px;
+		position: relative;
+
+		.toggle-button {
+			display: block;
+			float: right;
+		}
+
+		.col-6 {
+			position: static;
+		}
+
+		.nav-menu {
+			background-color: #eee;
+			display: none;
+			left: 0;
+			position: absolute;
+			top: 120px;
+			width: 100%;
+
+			&.show-menu {
+				display: block;
+			}
+
+			ul {
+				margin: 10px 0;
+			}
+
+			.menu-item {
+				display: block;
+				margin: 15px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}
