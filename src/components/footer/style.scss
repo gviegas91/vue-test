@@ -1,0 +1,18 @@
+.footer {
+	background-color: #fafafa;
+	padding: 130px 0;
+	text-align: center;
+
+	.project-logo {
+		margin: 0 0 40px;
+	}
+
+	.designed-by {
+		color: #9b9b9b;
+
+		& > span {
+			color: #000;
+			font-weight: bold;
+		}
+	}
+}
